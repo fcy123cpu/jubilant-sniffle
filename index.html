@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="个人主页" />
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="avatar" aria-hidden="true">FCY</div>
+          <div class="brand-text">
+            <h1 class="site-title">派大星🌟</h1>
+            <p class="site-subtitle">前端开发者 · 热爱设计与体验</p>
+          </div>
+        </div>
+        <nav class="nav" aria-label="主导航">
+          <button id="themeToggle" class="btn btn-ghost" aria-label="切换主题">🌓</button>
+          <a href="#about" class="nav-link">关于</a>
+          <a href="#projects" class="nav-link">项目</a>
+          <a href="#contact" class="nav-link">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">关于我</h2>
+          <p>
+            你好！我是派大星🌟，一名专注于 Web 前端开发的工程师，关注性能、可访问性与优雅的用户体验。
+            喜欢把复杂问题拆解成清晰、可靠且可维护的解决方案。
+          </p>
+          <ul class="pill-list">
+            <li class="pill">HTML</li>
+            <li class="pill">CSS / Tailwind</li>
+            <li class="pill">JavaScript / TypeScript</li>
+            <li class="pill">React</li>
+            <li class="pill">Node.js</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="container">
+          <h2 class="section-title">项目</h2>
+          <div class="grid">
+            <article class="card">
+              <h3 class="card-title">个人博客</h3>
+              <p class="card-desc">基于静态站点生成与自定义主题的博客，支持暗色模式与全文搜索。</p>
+              <div class="card-actions">
+                <a class="btn" href="#" aria-disabled="true">预览</a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">源码</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3 class="card-title">组件库</h3>
+              <p class="card-desc">一套轻量、可组合的 UI 组件，强调可访问性与主题化。</p>
+              <div class="card-actions">
+                <a class="btn" href="#" aria-disabled="true">预览</a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">源码</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3 class="card-title">数据可视化面板</h3>
+              <p class="card-desc">实时展示关键指标的仪表盘，支持拖拽布局与导出。</p>
+              <div class="card-actions">
+                <a class="btn" href="#" aria-disabled="true">预览</a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">源码</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">联系</h2>
+          <p>欢迎通过以下方式与我取得联系：</p>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:you@example.com" class="contact-link">you@example.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/yourname" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/yourname" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span>派大星🌟 保留所有权利。</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
